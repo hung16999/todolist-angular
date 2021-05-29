@@ -17,4 +17,19 @@ export class AppComponent {
     { id: v4(), name: 'nau com', done: true },
     { id: v4(), name: 'nau com', done: true },
   ];
+
+  addTask = (name: string) => {
+    const newTask = {
+      id: v4(),
+      name: name,
+      done: false,
+    };
+
+    this.listTask.unshift(newTask);
+  };
+
+  removeTask = (task: Task) => {
+    const indexOfTask = this.listTask.indexOf(task);
+    this.listTask.splice(indexOfTask, 1);
+  };
 }
