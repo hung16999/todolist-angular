@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Task } from '../task';
 import { v4 } from 'uuid';
 import { listTask } from '../task';

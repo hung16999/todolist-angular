@@ -1,4 +1,9 @@
 <div>
-  <input #name (keyup.enter)="addNewTask(name.value); name.value=''" type="text" placeholder="What do you need to do?">
+  <input
+    #name
+    (keyup.enter)="addNewTask(name.value); name.value=''"
+    type="text" placeholder="What do you need to do?"
+  >
+
   <button (click)="addNewTask(name.value); name.value=''">+</button>
 </div>

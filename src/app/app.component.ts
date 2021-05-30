@@ -1,6 +1,4 @@
 import { Component, Output } from '@angular/core';
-import { v4 } from 'uuid';
-import { Task } from './task';
 
 @Component({
   selector: 'app-root',
